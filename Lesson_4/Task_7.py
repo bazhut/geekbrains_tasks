@@ -12,4 +12,3 @@ def fact(n):
 
 for el in fact(int(input("Type a number: "))):
     print(el)
-
