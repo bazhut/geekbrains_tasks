@@ -13,7 +13,5 @@ with open("text_6.txt", "r", encoding="utf-8") as f_obj:
             if temp_val:
                 val.append(''.join(temp_val))
             i += 1
-        val = [int(i) for i in val]
-        sum_val = sum(val)
-        my_el[el[0]] = sum_val
+        my_el[el[0]] = sum(map(int, val))
     print(my_el)
