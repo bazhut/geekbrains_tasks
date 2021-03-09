@@ -9,10 +9,11 @@ class Matrix:
         return my_str
 
     def __add__(self, other):
-        result = [[0, 0], [0, 0], [0, 0]]
+        result = []
         for i in range(len(self.matrix)):
+            result.append([])
             for j in range(len(self.matrix[0])):
-                result[i][j] = self.matrix[i][j] + other.matrix[i][j]
+                result[i].append(self.matrix[i][j] + other.matrix[i][j])
         my_str = ""
         for i in result:
             my_str += f"{i[0]} {i[1]}\n"
