@@ -6,8 +6,9 @@ import sys
 class Warehouse:
     def __init__(self, name_warehouse):
         self.name_warehouse = name_warehouse
-        self.warehouse_dict = {'12': {'quantity': 24, 'price': 24.0, 'productivity': 12.0, 'type': 'Xerox'},
-                               '33': {'quantity': 24, 'price': 24.0, 'productivity': 12.0, 'type': 'Printer'}}
+        self.warehouse_dict = {'Canon': {'quantity': 24, 'price': 240000, "color": True, 'type': 'Printer'},
+                               'Epson': {'quantity': 45, 'price': 450000, 'wifi': 12.0, 'type': 'Scanner'},
+                               'Nikon': {'quantity': 15, 'price': 150000, 'productivity': 12.0, 'type': 'Xerox'}}
         self.warehouse_transfer_history = {}
 
     def add_to_warehouse(self, *parts):
